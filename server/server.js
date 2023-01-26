@@ -32,14 +32,6 @@ app.post('/todo/new', async (req, res) => {
     res.json(todo)
 })
 
-// Delete a todo
-app.delete('/todo/delete/:id', async (req, res) => {
-    // Find and delete the todo to delete
-    const todo = await Todo.findByIdAndDelete(req.params.id)
-
-    res.json(todo)
-})
-
 // Update a todo 
 app.patch('/todo/complete/:id', async (req, res) => {
     // Find the todo to update
@@ -50,6 +42,14 @@ app.patch('/todo/complete/:id', async (req, res) => {
 
     // Save the new todo in the db
     todo.save()
+
+    res.json(todo)
+})
+
+// Delete a todo
+app.delete('/todo/delete/:id', async (req, res) => {
+    // Find and delete the todo to delete
+    const todo = await Todo.findByIdAndDelete(req.params.id)
 
     res.json(todo)
 })
