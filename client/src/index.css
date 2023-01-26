@@ -1,13 +1,119 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.App {
+  padding: 32px;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: rgb(78, 77, 77);
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-left: 8px;
+}
+
+.todo {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+  border-radius: 16px;
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+  padding: 15px;
+  max-width: 700px;
+  min-width: 400px;
+}
+
+.todo:hover {
+	opacity: 0.8;
+}
+
+.todo .checkbox {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	border-radius: 50%;
+	background-color: white;
+	transition: 0.4s;
+}
+
+.todo .checkbox.is-complete {
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	transition: 0.4s;
+}
+
+.todo--content {
+  font-size: 18px;
+  font-weight: 500;
+  color:rgb(78, 77, 77);
+}
+
+.todo--content.is-complete {
+  text-decoration: line-through;
+}
+
+.todo--trash {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  color: rgb(102, 102, 102);
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 16px;
+}
+
+.todo--trash:hover {
+  color: black;
+}
+
+.add--todo {
+  display: flex;
+  flex-direction: row;
+}
+
+.todo--add {
+  border: none;
+  color: black;
+  border-color: grey;
+  background-color: aliceblue;
+  font-weight: 700;
+  height: 45px;
+  width: 45px;
+  text-transform: uppercase;
+  font-size: 45px;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.todo--add:hover {
+  font-size: 48px;
+  transition: 0.2s;
+}
+
+
