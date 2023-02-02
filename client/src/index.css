@@ -116,4 +116,216 @@ h4 {
   transition: 0.2s;
 }
 
+.new--todo-content {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  margin-left: 10px;
+  width: 350px;
+  height: 20px;
+}
 
+.dash-header__container {
+  display: flex;
+  background-color: rgb(230, 230, 230);
+  align-items: center;
+}
+
+.dash-header__home {
+  border: none;
+  cursor: pointer;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  margin-left: 10px;
+  margin-right: 100px;
+}
+
+.dash-header__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.notes {
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.note {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 16px;
+  height: 180px;
+  width: 300px;
+  padding: 20px
+}
+
+.add--note {
+  margin-left: 15px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 16px;
+  height: 180px;
+  width: 300px;
+  padding: 20px
+}
+
+.note--add {
+  border: none;
+  color: black;
+  border-color: grey;
+  background-color: rgb(230, 230, 230);
+  font-weight: 700;
+  height: 20px;
+  width: 20px;
+  text-transform: uppercase;
+  font-size: 45px;
+  cursor: pointer;
+  position: relative;
+}
+
+.note--add:hover {
+  font-size: 48px;
+  transition: 0.2s;
+}
+
+.note--forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.new--note-title {
+  margin-bottom: 20px;
+  height: 25px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  font-weight: 700;
+}
+
+.new--note-content {
+  margin-bottom: 20px;
+  height: 50px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  font-weight: 700;
+  margin: 0
+}
+
+
+.note-header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note--edit {
+  margin-right: 5px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+}
+
+.note--trash {
+  border: none;
+  background-color: rgb(230, 230, 230);
+}
+
+.counter--container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.counterSum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: xx-large;
+  background-color: steelblue;
+  border-radius: 999px;
+  height: 130px;
+  width: 130px;
+  color: white;
+}
+
+.addSub--counter {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.counter--button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 999px;
+  margin-top: 75px;
+  margin-left: -40px;
+  background-color: grey;
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.counter--buttonSub {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 999px;
+  margin-top: 75px;
+  margin-right: -40px;
+  background-color: grey;
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
+  z-index: 1;
+}
+
+.counter--inter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter--input {
+  border: none;
+  background-color: rgb(230, 230, 230);
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: xx-large;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.counter--sub {
+  height: 35px;
+  width: 55px;
+  border: 3px solid grey;
+  background-color: steelblue;
+  border-radius: 19px;
+  font-weight: 700;
+}
+
+.counter--add {
+  height: 35px;
+  width: 55px;
+  border: 3px solid grey;
+  background-color: steelblue;
+  border-radius: 19px;
+  font-weight: 700;
+}
+
+.reset--counter {
+  margin-top: 20px;
+  height: 35px;
+  width: 55px;
+  border: 3px solid grey;
+  background-color: steelblue;
+  border-radius: 19px;
+  font-weight: 700;
+}
